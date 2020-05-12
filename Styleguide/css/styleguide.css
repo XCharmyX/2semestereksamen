@@ -65,6 +65,27 @@
 	color: #554960;
 }
 
+
+
+
+/* Icons */
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 50px;
+	margin-top: 35px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+
 /*Colors*/
 .grid-container-colors {
   display: grid;
@@ -163,4 +184,5 @@
   font-size: 30px;
 	color: #fff;
   text-align: center;
+
 }

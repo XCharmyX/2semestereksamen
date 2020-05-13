@@ -1,40 +1,47 @@
-.body{
-	background-color: #777777;
-}
 @media only screen and (min-width: 601px) {
 	/* NAV */
+
 .navbar {
 	background: #fff;
 }
+
 .navbar ul li a {
 	color: var(--main-color);
 }
+
 .navbar li ul li {
 	background: rgb(255, 255, 255);
 }
+
 .navbar ul li ul li a {
 	color: var(--main-color);
 }
+
 .navbar li:hover ul li:hover {
 	background-color: #e5e5e5;
 }
+
 .navbar.shrink {
 	background-color: #fff;
 }
+
 .navbar {
 	position: relative;
 	height: 70px;
 	margin: 0 auto;
 	background: rgba(0, 0, 0, 0.5);
 }
+
 .navbar.shrink a,
 .navbar.shrink #navibar {
 	line-height: 50px;
 }
+
 .navbar ul {
 	list-style-type: none;
 	text-align: center;
 }
+
 .navbar ul li {
 	display: inline-block;
 	margin-left: 15px;
@@ -46,6 +53,7 @@
 	-moz-transition: 0.25s all;
 	transition: 0.25s all;
 }
+
 .navbar ul li a,
 .navres {
 	font-family: 'Karla', sans-serif;
@@ -61,46 +69,71 @@
 	-moz-transition: 0.25s all;
 	transition: 0.25s all;
 }
+
 .navbar ul li:hover {
 	background: var(--theme-border-light);
 }
+
 .navbar ul li:hover a {
 	color: #554960;
 }
+/**/
 .btn1{
-display: block;
-font-family: 'Titillium Web', sans-serif;
-background-color: #222222;
-color: #fff;
-text-decoration: bold;
-padding-top: 15px;
-padding-bottom: 15px;
-padding-left: 15px;
+background-color:#222222;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
 }
-.btn1:hover{
-background color: #6c6c6c;
-color: #fff;
-}
-.btn2{
-display: block;
-font-family: 'Titillium Web', sans-serif;
-color: #3b3b3b;
-}
-.btn2:hover{
 
+.btn1:hover{
+background-color:#6c6c6c;
 }
+
+.btn2{
+background-color:#44c767;
+border-radius:11px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Glyphicons Halflings;
+font-size:17px;
+font-weight:bold;
+padding:16px 20px;
+text-decoration:none;
+}
+
+.btn2:hover{
+background-color:#039844;
+}
+
 .btn3{
-font-family: 'Titillium Web', sans-serif;
-color: #3b3b3b;
+background-color:#3379b7;
+border-radius:11px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Glyphicons Halflings;
+font-size:17px;
+font-weight:bold;
+padding:16px 20px;
+text-decoration:none;
 }
+
 .btn3:hover{
-	
+background-color:#204d74;	
 }
+
 h1{
 font-family: 'Titillium Web', sans-serif;	
 }
+
 a {
-    color: #00c52c;
+color: #00c52c;
 }
 
 .whentouse{
@@ -109,17 +142,21 @@ position; right;
 height: 200px;  
 width: 500px;
 }
+
 .whentousetext{
 font-family: 'Karla', sans-serif;
 color: #3b3b3b;
 font-size: 14px;
 }
+
 .lilbox{
 
 }
+
 .bigbox{
 	
 }
+
 /* Icons */
 * {
   box-sizing: border-box;
@@ -252,6 +289,7 @@ hr.solid {
 /*Colors slut*/
 
 /*Header*/
+
 img {
     max-width:100%;
     height:auto;

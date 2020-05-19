@@ -1,15 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-	<title></title>
+	<title>Trendlog - Reports</title>
 	  	<link rel="stylesheet" href="css/index.css">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<meta charset="utf-8">
   		<meta name="description" content="">
   		<meta name="keywords" content="">
   		<script src="index.js"></script>
+		
 </head>
 <body>
+<div class="rightside">
+<div id="reports">
+<div class="box_box_tab">
+    <h2>Reports</h2>
+    <div class="box_box_main">
+        <div class="box_heading"><a>Report 1</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        Text text text <br><br>
+        Text text text <br><br>
+        Text text text <br><br>
+        Text text text <br><br>
+        Text text text <br><br>
+        </p></div></div>
+        
+        <div class="box_box_main">
+        <div class="box_heading"><a>Report 2</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
+        
+        <div class="box_box_main">
+        <div class="box_heading"><a>Report 3</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
+        
+        <div class="box_box_main">
+        <div class="box_heading"><a>Report 4</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
+        
+        <div class="box_box_main">
+        <div class="box_heading"><a>Report 5</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
+        
+        <div class="box_box_main">
+        <div class="box_heading"><a>Report 6</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
 
+<div class="box_box_main">
+        <div class="box_heading"><a>Report 7</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
+
+<div class="box_box_main">
+        <div class="box_heading"><a>Report 8</a>
+        <div class="box_icon"><div class="box_bar f"></div><div class="box_bar s"></div></div></div>
+        <div class="box_box"><p>
+        
+        </p></div></div>
+    </div>
+</div>
+
+</div>
+<div class="leftside"> </div>
+<script>
+$('.box_box').hide();
+$('.box_heading').click(function(){
+$(this).next('.box_box').fadeToggle('slow');
+$(this).find('a').toggleClass('active');
+$(this).toggleClass('change');
+});
+</script> 
 </body>
 </html>

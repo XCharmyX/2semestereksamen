@@ -1,7 +1,113 @@
-.{
+@import url('google font link her');
 
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* THEME */
+    --theme-main-color: #d3d3d3;
+    --theme-text-color: #;
+    --theme-border-light: rgba(255, 255, 255, 0.1);
+    /* BG */
+    background: var(--theme-main-color);
 }
-
+/*Reports side*/
+.leftside{
+align-content: left;
+}
+.rightside{
+align-content: right;
+}
+#reports {
+    text-align: center;
+}
+.box_box_tab {
+    width: 100%;
+    display: block;
+}
+#reports h2 {
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 5px;
+}
+.box_box_main {
+    font-family: 'arial', sans-serif;
+    background: var(--theme-main-color-dark);
+    margin: 10px 0;
+    -webkit-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    transition: 0.25s all;
+}
+.box_heading {
+    font-family: 'arial', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+.box_heading:hover a {
+    color: #;
+}
+.box_box_main .active {
+    color: #;    
+}
+.box_heading a {
+    color: var(--main-color);
+    font-size: 17px;
+    text-transform: capitalize;
+    cursor: pointer;
+    -webkit-transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    transition: 0.25s all;
+}
+.box_icon {
+    margin-left: auto;
+    margin-right: 40px;
+}
+.box_bar {
+    position: absolute;
+    display: block;
+    width: 14px;
+    height: 3px;
+    background: #049e64;
+    border-radius: 3px;
+    transition: all 275ms ease-in-out;
+}
+.box_heading.change .box_bar {
+    background: #e22d2d;
+}
+.box_icon .f {
+    transform: translateX(-4px) rotate(45deg);
+}
+.box_icon .s {
+    transform: translateX(4px) rotate(-45deg);
+}
+.box_heading.change .box_icon .f {
+    transform: translateX(0px) rotate(45deg);
+}
+.box_heading.change .box_icon .s {
+    transform: translateX(0px) rotate(-45deg);
+}
+.box_box {
+    width: 100%;
+    text-align: left;
+    background: var(--theme-main-color-dark);
+    border-top: 3px solid var(--theme-border-light);
+    font-family: 'arial', sans-serif;
+    letter-spacing: 0.35px;
+    padding-bottom: 10px;
+}
+.box_box p {
+    color: var(--theme-text-color);
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'arial', sans-serif;
+}
+/*Reports side slut*/
 
 /* Pick template start - Ice */
 body {

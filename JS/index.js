@@ -1,7 +1,13 @@
-console.log("it works");
-document.getElementById("kundebtn").onclick = function() {slideInKunde()};
-function slideInKunde() {
-  var win = document.getElementByClass("kundeslide");
-  win.style.transition = "right 1s ease-in-out 0s";
-	win.style.left = "0px";
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
 }

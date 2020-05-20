@@ -132,8 +132,53 @@ text-decoration:none;
 
 /*Report editor side start*/
 
-.editor-nav {
+/*Mobile version*/
+@media only screen and (max-width: 600px){
+
+
+.grid-container-editor {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #D3D3D3;
+  padding: 10px;
+  font-family: "Arial";
+  grid-row-gap: 20px;
 
 }
+
+.grid-item-save
+{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #5CB85C;
+}
+
+.grid-item-save-template{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: #FFFFFF;
+}
+
+.grid-item-view-report{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+    background-color: #FFFFFF;
+
+}
+
+
 
 /*Report editor side slut*/

@@ -8,12 +8,11 @@ body {
   background-color: #d3d3d3;
 }
 
-
-/* Pick template - Grid kolonner  */
-.grid-container {
+/* Pick template - Ice - Grid kolonner  */
+.grid-container-picktemplate {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 50px;
+  grid-gap: 10px;
   background-color: #d3d3d3;
   padding: 10px;
 }
@@ -30,7 +29,7 @@ body {
 }
 
 /* knapper */
-.btn1{
+.btn-picktemplate{
 background-color:#222222;
 display:inline-block;
 cursor:pointer;
@@ -42,9 +41,11 @@ padding:10px 12px;
 text-decoration:none;
 }
 
-.btn1:hover{
+.btn-picktemplate :hover{
 background-color:#6c6c6c;
 }
+/* Pick template slut - Ice */
+
 
 body {
     overflow-y: scroll;
@@ -139,7 +140,7 @@ overflow: hidden;
 background-color: #f1f1f1;
 }
 
-/* Pick template start - Ice */
+
 
 /* Grid kolonner start */
 .grid-container {
@@ -160,7 +161,9 @@ font-size: 30px;
 .item1 {
 grid-row-end: span 1;
 }
-/* Pick template slut - Ice */
+
+
+
 /*View Reports side web*/
 .btn1 {
 display:inline-block;

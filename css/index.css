@@ -17,7 +17,7 @@ body {
   padding: 10px;
 }
 
-.grid-container > div {
+.grid-container-picktemplate > div {
   background-color: #d3d3d3;
   text-align: center;
   padding: 20px 0;

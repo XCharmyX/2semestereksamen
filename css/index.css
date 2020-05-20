@@ -3,13 +3,13 @@
 }
 
 
-/* Pick template start - Ice */
+/* Pick template  - Ice */
 body {
   background-color: #d3d3d3;
 }
 
 
-/* Grid kolonner start */
+/* Pick template - Grid kolonner  */
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -19,12 +19,29 @@ body {
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #d3d3d3;
   text-align: center;
-  padding: 50px 0;
-  font-size: 30px;
+  padding: 20px 0;
+  font-size: 20px;
 }
 
 .item1 {
-  grid-row-end: span 1;
+  grid-row-end: span 3;
+}
+
+/* knapper */
+.btn1{
+background-color:#222222;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
+}
+
+.btn1:hover{
+background-color:#6c6c6c;
 }

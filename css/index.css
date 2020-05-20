@@ -1,5 +1,3 @@
-@import url('google font link her');
-
 body {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -15,50 +13,51 @@ body {
 /*Reports side mobile*/
 
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+background-color: #555;
 }
 
 .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
 }
 
 
-/* Pick template start - Ice */
 
-/* Grid kolonner start */
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 50px;
-  background-color: #d3d3d3;
-  padding: 10px;
+/*View Reports side mobile*/
+.btn1 {
+display:inline-block;
+cursor:pointer;
+color:#222222;
+font-family:Arial;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 50px 0;
-  font-size: 30px;
+.btn1:hover {
+  background-color:#6c6c6c;
 }
 
-.item1 {
-  grid-row-end: span 1;
+.btn1:active {
+  position:relative;
+  top:1px;
 }
+
 }
 /*WEB*/
 @media only screen and (min-width: 601px) {
@@ -70,27 +69,63 @@ align-content: left;
 align-items: right;
 }
 .collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+background-color: #555;
 }
 
 .content {
-  padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
 }
 
+/* Pick template start - Ice */
 
+/* Grid kolonner start */
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto;
+grid-gap: 50px;
+background-color: #d3d3d3;
+padding: 10px;
+}
+
+.grid-container > div {
+background-color: rgba(255, 255, 255, 0.8);
+text-align: center;
+padding: 50px 0;
+font-size: 30px;
+}
+
+.item1 {
+grid-row-end: span 1;
+}
+/* Pick template slut - Ice */
+/*View Reports side web*/
+.btn1 {
+display:inline-block;
+cursor:pointer;
+color:#222222;
+font-family:Arial;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
+}
+
+.btn1:hover {
+  background-color:#6c6c6c;
+}
 }

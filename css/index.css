@@ -1,3 +1,4 @@
+
 .{
 
 }
@@ -47,6 +48,7 @@ text-decoration:none;
 background-color:#6c6c6c;
 }
 /* Pick template slut - Ice */
+
 
 
 body {
@@ -101,24 +103,87 @@ text-decoration:none;
 }
 
 .btn1:hover {
-  background-color:#6c6c6c;
+background-color:#6c6c6c;
 }
 
 .btn1:active {
-  position:relative;
-  top:1px;
+position:relative;
+top:1px;
+}
+
+.icon-bar {
+width: 60%;
+overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #222222;
+  font-size: 27px;
+}
+
+.icon-bar a:hover {
+  background-color: #9d9d9d;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.btn {
+  color: #222222;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5CB85C;
 }
 
 }
 /*WEB*/
 @media only screen and (min-width: 601px) {
+/*Navbar web*/
+.logo {
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #9d9d9d;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5CB85C;
+  color: white;
+}
 /*Reports side web*/
 .leftside{
 align-content: left;
 }
+
 .rightside{
 align-items: right;
 }
+
 .collapsible {
 background-color: #777;
 color: white;
@@ -132,7 +197,7 @@ font-size: 15px;
 }
 
 .active, .collapsible:hover {
-background-color: #555;
+background-color: #9d9d9d;
 }
 
 .content {
@@ -142,30 +207,44 @@ overflow: hidden;
 background-color: #f1f1f1;
 }
 
-
-
-/* Grid kolonner start */
-.grid-container {
-display: grid;
-grid-template-columns: auto auto auto;
-grid-gap: 50px;
-background-color: #d3d3d3;
-padding: 10px;
+/* Pick template  - Ice */
+/* Pick template - Ice - Grid kolonner  */
+.grid-container-picktemplate {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #d3d3d3;
+  padding: 10px;
 }
 
-.grid-container > div {
-background-color: rgba(255, 255, 255, 0.8);
-text-align: center;
-padding: 50px 0;
-font-size: 30px;
+.grid-container-picktemplate > div {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
 }
 
 .item1 {
-grid-row-end: span 1;
+  grid-row-end: span 3;
 }
 
+/* knapper */
+.btn-picktemplate{
+background-color:#222222;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
+}
 
-
+.btn-picktemplate :hover{
+background-color:#6c6c6c;
+}
+/* Pick template slut - Ice */
 /*View Reports side web*/
 .btn1 {
 display:inline-block;
@@ -181,6 +260,7 @@ text-decoration:none;
 .btn1:hover {
   background-color:#6c6c6c;
 }
+
 }
 
 
@@ -203,41 +283,40 @@ text-decoration:none;
   font-family: "Arial";
   grid-row-gap: 20px;
 
+
+.icon-bar {
+width: 20%;
+overflow: auto;
 }
 
-.grid-item-save
-{
-  padding: 20px;
-  font-size: 30px;
+.icon-bar a {
+  display: block;
+  float: left;
+  width: 25%;
   text-align: center;
-  border: 2px solid black;
-  border-radius: 25px;
-  font-size: 20px;
-  color: #FFFFFF;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: #222222;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #9d9d9d;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.btn {
+  color: #222222;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
   background-color: #5CB85C;
 }
 
-.grid-item-save-template{
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 25px;
-  font-size: 20px;
-  background-color: #FFFFFF;
 }
-
-.grid-item-view-report{
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  border: 2px solid black;
-  border-radius: 25px;
-  font-size: 20px;
-    background-color: #FFFFFF;
-
-}
-
-
-
-/*Report editor side slut*/

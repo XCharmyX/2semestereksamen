@@ -20,14 +20,68 @@
 
 </div>
 
-<div class="textarea-editor">
+<div class="tab">
+  <button class="tablinks" class="btn active" onclick="openTab(event, 'Template')">Template</button>
+  <button class="tablinks" onclick="openTab(event, 'Style')">Style</button>
+  <button class="tablinks" onclick="openTab(event, 'Script')">Script</button>
+  <button class="tablinks" onclick="openTab(event, 'Data')">Data</button>
+  <button class="tablinks" onclick="openTab(event, 'Query')">Query</button>
+</div>
+
+<div id="Template" class="tabcontent">
+  <div class="textarea-editor">
 
 
 <label for="code-editor"></label>
-<textarea id="code-editor" rows="30" cols="47">
-Write your code here...
+<textarea id="code-editor" rows="30" cols="45" placeholder="Write your code here...">
 </textarea>
 
+</div>
+
+</div>
+
+<div id="Style" class="tabcontent">
+   <div class="textarea-editor">
+
+
+<label for="code-editor"></label>
+<textarea id="code-editor" rows="30" cols="45" placeholder="Write your code here...">
+</textarea>
+
+</div>
+</div>
+
+<div id="Script" class="tabcontent">
+   <div class="textarea-editor">
+
+
+<label for="code-editor"></label>
+<textarea id="code-editor" rows="30" cols="45" placeholder="Write your code here...">
+</textarea>
+
+</div>
+</div>
+
+<div id="Data" class="tabcontent">
+   <div class="textarea-editor">
+
+
+<label for="code-editor"></label>
+<textarea id="code-editor" rows="30" cols="45" placeholder="Write your code here...">
+</textarea>
+
+</div>
+</div>
+
+<div id="Query" class="tabcontent">
+   <div class="textarea-editor">
+
+
+<label for="code-editor"></label>
+<textarea id="code-editor" rows="30" cols="45" placeholder="Write your code here...">
+</textarea>
+
+</div>
 </div>
 
 <script src="./js/editor.js"></script>

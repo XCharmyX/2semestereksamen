@@ -274,11 +274,111 @@ text-decoration:none;
 /*Mobile version*/
 @media only screen and (max-width: 600px){
 
-
 .grid-container-editor {
   display: grid;
   grid-template-columns: auto;
   background-color: #D3D3D3;
+  padding: 10px;
+  font-family: "Arial";
+  grid-row-gap: 20px;
+
+}
+
+.grid-item-save {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #5CB85C;
+}
+
+.grid-item-save li {
+  list-style: none;
+}
+
+.grid-item-save a {
+  text-decoration: none;
+
+}
+
+.grid-item-save a:visited {
+  color: #fff;
+
+}
+
+.grid-item-save-template{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: #FFFFFF;
+}
+
+.grid-item-save-template li {
+  list-style: none;
+}
+
+.grid-item-save-template a {
+  text-decoration: none;
+
+}
+
+.grid-item-save-template a:visited {
+  color: #222222;
+
+}
+
+.grid-item-view-report{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 25px;
+  font-size: 20px;
+  background-color: #FFFFFF;
+
+}
+
+.grid-item-view-report li {
+  list-style: none;
+}
+
+.grid-item-view-report a {
+  text-decoration: none;
+}
+
+.grid-item-view-report a:visited {
+  color: #222222;
+}
+
+textarea {
+  background-color: ;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.textarea-editor{
+  padding: 0 5px 0 5px;
+}
+
+
+
+}
+
+/*Web version*/
+@media only screen and (min-width: 601px) {
+
+.grid-container-editor {
+  display: grid;
+  grid-template-columns: auto;
+  background-color: #F1F1F1;
   padding: 10px;
   font-family: "Arial";
   grid-row-gap: 20px;
@@ -297,6 +397,18 @@ text-decoration:none;
   background-color: #5CB85C;
 }
 
+.grid-item-save li {
+  list-style: none;
+}
+
+.grid-item-save a {
+  text-decoration: none;
+}
+
+.grid-item-save a:visited {
+  color: #fff;
+}
+
 .grid-item-save-template{
   padding: 20px;
   font-size: 30px;
@@ -307,6 +419,20 @@ text-decoration:none;
   background-color: #FFFFFF;
 }
 
+.grid-item-save-template li {
+  list-style: none;
+}
+
+.grid-item-save-template a {
+  text-decoration: none;
+
+}
+
+.grid-item-save-template a:visited {
+  color: #222222;
+
+}
+
 .grid-item-view-report{
   padding: 20px;
   font-size: 30px;
@@ -314,8 +440,29 @@ text-decoration:none;
   border: 2px solid black;
   border-radius: 25px;
   font-size: 20px;
-    background-color: #FFFFFF;
+  background-color: #FFFFFF;
 
+}
+
+.grid-item-view-report li {
+  list-style: none;
+}
+
+.grid-item-view-report a {
+  text-decoration: none;
+}
+
+.grid-item-view-report a:visited {
+  color: #222222;
+}
+
+textarea {
+  background-color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
 }
 /*Report editor side slut*/
 

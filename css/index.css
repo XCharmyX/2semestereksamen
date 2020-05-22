@@ -106,9 +106,26 @@ text-decoration:none;
 background-color:#6c6c6c;
 }
 
+
+
+/* Pick template slut - Ice */
+
+
+
+
+
+
+
 @media only screen and (min-width: 601px) { /* Web - Ice */
 
 /* Pick template - Web version slut */
+
+
+
+
+
+
+
 
 
 
@@ -422,27 +439,82 @@ textarea {
     margin-right: auto;
 }
 
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
 
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext img {
+  width: 25px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
 
 }
+
+/*Mobil version slut*/
 
 /*Web version*/
 @media only screen and (min-width: 601px) {
 
-.grid-container-editor {
-  display: grid;
-  grid-template-columns: auto;
-  background-color: #F1F1F1;
-  padding: 10px;
-  font-family: "Arial";
-  grid-row-gap: 20px;
-
+  .grid-container-editor {
+    float: left;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #F1F1F1;
+    padding: 80px;
+    font-family: "Arial";
+    grid-row-gap: 15px;
 }
 
-.grid-item-save
-{
+.grid-item-save {
   padding: 20px;
-  font-size: 30px;
   text-align: center;
   border: 2px solid black;
   border-radius: 25px;
@@ -451,21 +523,8 @@ textarea {
   background-color: #5CB85C;
 }
 
-.grid-item-save li {
-  list-style: none;
-}
-
-.grid-item-save a {
-  text-decoration: none;
-}
-
-.grid-item-save a:visited {
-  color: #fff;
-}
-
 .grid-item-save-template{
   padding: 20px;
-  font-size: 30px;
   text-align: center;
   border: 2px solid black;
   border-radius: 25px;
@@ -489,7 +548,6 @@ textarea {
 
 .grid-item-view-report{
   padding: 20px;
-  font-size: 30px;
   text-align: center;
   border: 2px solid black;
   border-radius: 25px;
@@ -510,14 +568,110 @@ textarea {
   color: #222222;
 }
 
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  font-family: "Helvetica";
+
+}
+
+.tab button {
+  background-color: #F1F1F1;
+  float: left;
+  border: 1px;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 11px;
+  font-family: "Helvetica";
+  font-weight: bold;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.tab button:hover {
+  background-color: #5CB85C;
+}
+
+.tab button.active {
+  background-color: #5CB85C;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 textarea {
-  background-color: #fff;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 10px 0px 10px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+
+     width: 50%;
 }
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext img {
+  width: 25px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
 /*Report editor side slut*/
 
 

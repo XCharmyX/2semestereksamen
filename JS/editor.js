@@ -1,3 +1,10 @@
+//Pop up
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+//Tabs
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -12,7 +19,7 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
-// Add active class to the current button (highlight it)
+//Hightlight active tab
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {

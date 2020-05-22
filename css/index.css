@@ -3,60 +3,8 @@
 
 }
 
-/* Pick template mobile version start */
-body {
-	background-color: #d3d3d3;
-}
 
-/* Pick template - Grid kolonner  */
-.grid-container-picktemplate {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-gap: 10px;
-	background-color: #d3d3d3;
-	padding: 10px;
-}
-
-.grid-item-picktemplate img {
-		max-width: 80%;
-	  height: auto;
-}
-
-.grid-container-picktemplate > div {
-	background-color: #d3d3d3;
-	text-align: center;
-	padding: 20px 0;
-	font-size: 20px;
-}
-
-.item1 {
-	grid-row-end: span 3;
-}
-
-/* knapper */
-.btn-picktemplate{
-border-radius: 25px;
-background-color:#222222;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-font-family:Arial, Helvetica, sans-serif;
-font-size:12px;
-font-weight:bold;
-padding:10px 12px;
-text-decoration:none;
-}
-
-.btn-picktemplate:hover{
-background-color:#6c6c6c;
-}
-
-@media only screen and (min-width: 600px) {
-/* Pick template - mobile vision slut */
-
-
-
-/* Pick template - Web version start */
+/* Pick template  - Ice */
 body {
   background-color: #d3d3d3;
   margin: 0;
@@ -72,11 +20,6 @@ body {
   padding: 10px;
 }
 
-.grid-item-picktemplate img {
-		max-width: 40%;
-	  height: auto;
-}
-
 .grid-container-picktemplate > div {
   background-color: #d3d3d3;
   text-align: center;
@@ -90,7 +33,6 @@ body {
 
 /* knapper */
 .btn-picktemplate{
-border-radius: 25px;
 background-color:#222222;
 display:inline-block;
 cursor:pointer;
@@ -102,15 +44,24 @@ padding:10px 12px;
 text-decoration:none;
 }
 
-.btn-picktemplate:hover{
+.btn-picktemplate :hover{
 background-color:#6c6c6c;
 }
 
 /* Pick template slut - Ice */
 
+
+
+
+
+
+
+
+
 @media only screen and (min-width: 601px) { /* Web - Ice */
 
 /* Pick template - Web version slut */
+
 
 
 
@@ -278,7 +229,44 @@ overflow: hidden;
 background-color: #f1f1f1;
 }
 
+/* Pick template  - Ice */
+/* Pick template - Ice - Grid kolonner  */
+.grid-container-picktemplate {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #d3d3d3;
+  padding: 10px;
+}
 
+.grid-container-picktemplate > div {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item1 {
+  grid-row-end: span 3;
+}
+
+/* knapper */
+.btn-picktemplate{
+background-color:#222222;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
+}
+
+.btn-picktemplate :hover{
+background-color:#6c6c6c;
+}
+/* Pick template slut - Ice */
 /*View Reports side web*/
 .btn1 {
 display:inline-block;
@@ -307,6 +295,11 @@ text-decoration:none;
 
 /*Mobile version*/
 @media only screen and (max-width: 600px){
+
+.back-arrow img {
+  width: 50px;
+  padding: 20px;
+}
 
 .grid-container-editor {
   display: grid;
@@ -421,7 +414,6 @@ text-decoration:none;
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
@@ -495,6 +487,13 @@ textarea {
 /*Web version*/
 @media only screen and (min-width: 601px) {
 
+  .back-arrow img {
+    margin-left: 340px;
+    width: 50px;
+    padding: 20px;
+    align-content:  center;
+  }
+
   .grid-container-editor {
     float: left;
     display: grid;
@@ -503,6 +502,7 @@ textarea {
     padding: 80px;
     font-family: "Arial";
     grid-row-gap: 15px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .grid-item-save {
@@ -562,7 +562,6 @@ textarea {
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
   font-family: "Helvetica";
 
 }
@@ -593,7 +592,6 @@ textarea {
 .tabcontent {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
 }
 
@@ -662,6 +660,7 @@ textarea {
   to {opacity:1 ;}
 }
 
+}
 
 
 /*Report editor side slut*/

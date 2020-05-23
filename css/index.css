@@ -1,12 +1,16 @@
-
-.{
-
-}
-
-/* Pick template mobile version start */
 body {
-	background-color: #d3d3d3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* THEME */
+    --theme-main-color: #d3d3d3;
+    --theme-text-color: #222222;
+    --theme-border-light: rgba(255, 255, 255, 0.1);
+    /* BG */
+    background: var(--theme-main-color);
 }
+/*MOBILE ONLY*/
+
+@media only screen and (min-width: 601px) {
 
 /* Pick template - Grid kolonner  */
 .grid-container-picktemplate {
@@ -51,78 +55,6 @@ text-decoration:none;
 background-color:#6c6c6c;
 }
 
-@media only screen and (min-width: 600px) {
-/* Pick template - mobile vision slut */
-
-
-
-/* Pick template - Web version start */
-body {
-  background-color: #d3d3d3;
-  margin: 0;
-  padding: 0;
-}
-
-/* Pick template - Ice - Grid kolonner  */
-.grid-container-picktemplate {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 10px;
-  background-color: #d3d3d3;
-  padding: 10px;
-}
-
-.grid-item-picktemplate img {
-		max-width: 40%;
-	  height: auto;
-}
-
-.grid-container-picktemplate > div {
-  background-color: #d3d3d3;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 20px;
-}
-
-.item1 {
-  grid-row-end: span 3;
-}
-
-/* knapper */
-.btn-picktemplate{
-border-radius: 25px;
-background-color:#222222;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-font-family:Arial, Helvetica, sans-serif;
-font-size:17px;
-font-weight:bold;
-padding:10px 12px;
-text-decoration:none;
-}
-
-.btn-picktemplate:hover{
-background-color:#6c6c6c;
-}
-
-@media only screen and (min-width: 601px) { /* Web - Ice */
-
-/* Pick template - Web version slut */
-
-
-body {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    /* THEME */
-    --theme-main-color: #d3d3d3;
-    --theme-text-color: #222222;
-    --theme-border-light: rgba(255, 255, 255, 0.1);
-    /* BG */
-    background: var(--theme-main-color);
-}
-/*MOBILE*/
-@media only screen and (max-width: 600px){
 /*Reports side mobile*/
 
 .collapsible {
@@ -204,75 +136,7 @@ overflow: auto;
 .btn:hover {
   background-color: #5CB85C;
 }
-
-}
-/*WEB*/
-@media only screen and (min-width: 601px) {
-/*Navbar web*/
-.logo {
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #222222;
-}
-
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #9d9d9d;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #5CB85C;
-  color: white;
-}
-/*Reports side web*/
-.leftside{
-align-content: left;
-}
-
-.rightside{
-align-items: right;
-}
-
-.collapsible {
-background-color: #777;
-color: white;
-cursor: pointer;
-padding: 18px;
-width: 100%;
-border: none;
-text-align: left;
-outline: none;
-font-size: 15px;
-}
-
-.active, .collapsible:hover {
-background-color: #9d9d9d;
-}
-
-.content {
-padding: 0 18px;
-display: none;
-overflow: hidden;
-background-color: #f1f1f1;
-}
-
-
 /*Report editor side start*/
-
-/*Mobile version*/
-@media only screen and (max-width: 600px){
-
 .back-arrow img {
   width: 50px;
   padding: 20px;
@@ -456,13 +320,126 @@ textarea {
   from {opacity: 0;}
   to {opacity:1 ;}
 }
-
 }
 
-/*Mobil version slut*/
 
+/*WEB ONLY*/
+@media only screen and (min-width: 601px){
+body {
+overflow-y: scroll;
+overflow-x: hidden;
+
+/* THEME */
+
+--theme-main-color: #d3d3d3;
+--theme-text-color: #222222;
+--theme-border-light: rgba(255, 255, 255, 0.1);
+/* BG */
+
+background: var(--theme-main-color);
+}
+/*Navbar web*/
+.logo {
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #9d9d9d;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #5CB85C;
+  color: white;
+}
+/*Reports side web*/
+.leftside{
+align-content: left;
+}
+
+.rightside{
+align-items: right;
+}
+
+.collapsible {
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+.active, .collapsible:hover {
+background-color: #9d9d9d;
+}
+
+.content {
+padding: 0 18px;
+display: none;
+overflow: hidden;
+background-color: #f1f1f1;
+}
+
+/* Pick template - Ice - Grid kolonner  */
+.grid-container-picktemplate {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #d3d3d3;
+  padding: 10px;
+}
+
+.grid-item-picktemplate img {
+		max-width: 40%;
+	  height: auto;
+}
+
+.grid-container-picktemplate > div {
+  background-color: #d3d3d3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.item1 {
+  grid-row-end: span 3;
+}
+
+/* knapper */
+.btn-picktemplate{
+border-radius: 25px;
+background-color:#222222;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-family:Arial, Helvetica, sans-serif;
+font-size:17px;
+font-weight:bold;
+padding:10px 12px;
+text-decoration:none;
+}
+
+.btn-picktemplate:hover{
+background-color:#6c6c6c;
+}
 /*Web version*/
-@media only screen and (min-width: 601px) {
 
   .back-arrow img {
     margin-left: 340px;
@@ -637,12 +614,8 @@ textarea {
   to {opacity:1 ;}
 }
 
-}
-
-
-/*Report editor side slut*/
-
-
+/* report editor slut */
+/* view report start*/
 .icon-bar {
 width: 20%;
 overflow: auto;
@@ -677,5 +650,4 @@ overflow: auto;
 .btn:hover {
   background-color: #5CB85C;
 }
-
 }

@@ -3,6 +3,7 @@
 <head>
 	<title>Trendlog - View Report</title>
 	  	<link rel="stylesheet" href="css/index.css">
+	  	<link rel="stylesheet" href="css/viewreport.css">
 	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<meta charset="utf-8">
@@ -12,16 +13,18 @@
 		
 </head>
 <body>
-	<div class="topnav">
-			<a href="" class="logo"> <img src="img/trendloglogo.png" alt="logo"></a></li>
-			<a href="" title=""><i class="fa fa-home"></i></a>
-			<a href="" title="">Trendboards</a>
-			<a href="" title="">Reports</a>
-			<a href="" title="">Views</a>
-			<a href="" title="">Feeds</a>
-			<a href="" title="">Settings</a>
-			<a href="" title="">Shares</a>
-	</div>
+<div class="topnav" id="myTopnav">
+  <img src="img/trendloglogo.png" alt="">
+  <a href="#news">Trendboards</a>
+  <a href="#news">Reports</a>
+  <a href="#contact">Views</a>
+  <a href="#about">Feeds</a>
+  <a href="#about">Settings</a>
+  <a href="#about">Shares</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 	
 <a href="reportarchive.html" class="btn1">Back</a>
 <div class="icon-bar">
@@ -29,6 +32,8 @@
 	<a href="#" target="blank" style="cursor: pointer" onclick="window.print();"class="btn"><i class="fa fa-print"></i></a>
 	<a class="btn"><i class="fa fa-envelope"></i></a>
 	<a class="btn"><i class="fa fa-refresh"></i></a>
+
+	<img src="img/reportph.png" alt="reportplaceholder" class="reportph">
 </div>
 </body>
 </html>

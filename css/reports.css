@@ -1,7 +1,63 @@
 /*MOBILE*/
 @media only screen and (max-width: 600px){}
+* {
+  box-sizing: border-box;
+}
 
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
 
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #5cb85c;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #9d9d9d;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.search{
+margin:auto;
+max-width:300px
+}
+
+.btn {
+  margin-left: 15%;
+  background-color:#022222;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:16px 31px;
+  text-decoration:none;
+}
+.btn:hover {
+  background-color:#9d9d9d;
+}
+.btn:active {
+  position:relative;
+  top:1px;
+}
 /*WEB*/
 @media only screen and (min-width: 601px){
   .collapsible {
@@ -26,6 +82,7 @@
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
 .leftside {
   text-align: left;
   font-size: 120%;
@@ -37,10 +94,69 @@
 .left_area {
   margin-top: 60%;
   margin-bottom: 30%;
+  background-color: #5cb85c;
 }
 .rightside {
   text-align: left;
   float: right;
   width: 60%;
 }
+
+.btn {
+  float: left;
+  margin-left: 27%;
+  background-color:#022222;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:17px;
+  font-weight:bold;
+  padding:16px 31px;
+  text-decoration:none;
+}
+.btn:hover {
+  background-color:#9d9d9d;
+}
+.btn:active {
+  position:relative;
+  top:1px;
+}
+* {
+  box-sizing: border-box;
+}
+
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #5cb85c;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.search button:hover {
+  background: #9d9d9d;
+}
+
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.search{
+margin:auto;
+max-width:300px
 }

@@ -130,6 +130,11 @@ overflow: auto;
   background-color: #9d9d9d;
 }
 
+.icon-bar img {
+  width: 90%;
+  padding: 0px 20px 0px 20px;
+}
+
 .active {
   background-color: #4CAF50;
 }
@@ -664,6 +669,11 @@ overflow: auto;
 
 .icon-bar a:hover {
   background-color: #9d9d9d;
+}
+
+.icon-bar img {
+  width: 100%;
+
 }
 
 .active {

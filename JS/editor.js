@@ -20,7 +20,7 @@ function openTab(evt, tabName) {
 }
 
 //Hightlight active tab
-var btns = header.getElementsByClassName("btn");
+var btns = document.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
   var current = document.getElementsByClassName("active");
@@ -28,3 +28,19 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+//Array
+let selectedTab = ['template', 'style', 'script', 'data', 'query'];
+console.log(selectedTab.length);
+
+//If else
+let hour = 12;
+
+if (hour >= 6 && hour < 12)
+console.log('Good morning!');
+
+else if (hour >= 12 && hour < 18)
+console.log('Good afternoon!');
+
+else
+console.log('Good evening!');

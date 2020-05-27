@@ -2,6 +2,12 @@
 //Get the button
 var mybutton = document.getElementById("myBtn");  //var mybotton er objekt
 
+// Array
+let pickTemplate = ['create', 'template2', 'template3', 'template4', 'template5', 'template6', 'template7', 'template8']
+pickTemplate[7] = 'template8';
+console.log(pickTemplate.length);
+
+
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
@@ -18,8 +24,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// Array
-let pickTemplate = ['create', 'template2', 'template3', 'template4', 'template5', 'template6', 'template7', 'template8']
-pickTemplate[7] = 'template8';
-console.log(pickTemplate.length);

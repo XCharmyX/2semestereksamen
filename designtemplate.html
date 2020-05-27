@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+      	<title>Trendlog - View Report</title>
+      	  	<link rel="stylesheet" href="css/index.css">
+            <link rel="stylesheet" href="css/designtemplate.css">
+
+      	  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        		<meta charset="utf-8">
+        		<meta name="description" content="">
+        		<meta name="keywords" content="">
+        		<script src="js/index.js"></script>
+            <script src="https://kit.fontawesome.com/8280338af8.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+    <a href="#"><img src="img/trendloglogo.png" alt="Trendlogo"></a>
+      <a href="#news">Trendboards</a>
+      <a href="#news">Reports</a>
+      <a href="#contact">Views</a>
+      <a href="#about">Feeds</a>
+      <a href="#about">Settings</a>
+      <a href="#about">Shares</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="designbar" id="designbar">
+      <a href='javascript:myFunction();'>  <i class="fas fa-palette fa-6x" style="color:#5cb85c;" onclick="changetab1()"></i> </a>
+      <a href='javascript:myFunction();'>  <i class="fas fa-chart-pie fa-6x" style="color:#5cb85c;" onclick="changetab2()"></i> </a>
+      <a href='javascript:myFunction();'>  <i class="fas fa-font fa-6x" style="color:#5cb85c;" onclick="changetab3()"></i> </a>
+      <a href='javascript:myFunction();'>  <i class="fas fa-upload fa-6x" style="color:#5cb85c;" onclick="changetab4()"></i> </a>
+    </div>
+
+    <div class="box" ondrop="drop(event)" ondragover="allowdrop(event)" id="box" >
+
+
+
+
+    </div>
+
+    <div class="buttons" id="buttons">
+      <button style="background-color:#5cb85c; border-color: black; border-radius: 12px; height: 50px;" type="button" name="">View Report</button>
+      <br>
+      <br>
+      <button style="background-color:#5cb85c; border-color: black; border-radius: 12px; height: 50px;" type="button" name="">Html</button>
+      <br>
+      <br>
+      <button style="background-color:#5cb85c; border-color: black; border-radius: 12px; height: 50px;" type="button" name="">Save as template</button>
+      <br>
+      <br>
+      <button style="background-color:#5cb85c; border-color: black; border-radius: 12px; height: 50px;" type="button" name="">Save
+      </button>
+    </div>
+
+    <div class="designbarcontent" id="designbarcontent">
+      <div class="tab4"  id="tab4" hidden>
+        <h3>Upload image</h3>
+        <input type="file" name="" value="">
+      </div>
+      <div class="tab3" id="tab3" hidden>
+        <h3>Fonts</h3>
+        <select class="" name="">
+          <option value="">Arial</option>
+          <option value="">Helvicta</option>
+          <option value="">Sans Serif</option>
+        </select>
+      </div>
+      <div class="tab2" id="tab2" hidden>
+        <h3>Choose a color</h3>
+        <input type="color" name="" value="">
+      </div>
+
+      <div class="tab1" id="tab1" ondrop="drop(event)" ondragover="allowdrop(event)" margin-top="35px">
+        <a style="padding-left:35px;"> <i class="far fa-chart-bar fa-5x" id="chartbar" draggable="true"ondragstart="drag(event)" ></i>
+        <a style="padding-left:95px;"> <i class="fas fa-chart-pie fa-5x" id="chartpie" draggable="true"ondragstart="drag(event)"></i>
+        <br>
+        <br>
+        <a style="padding-left:35px;"> <i class="fas fa-percentage fa-5x" id="percentage" draggable="true"ondragstart="drag(event)"></i>
+        <a style="padding-left:95px;"> <i class="fas fa-project-diagram fa-5x" id="projectdiagram" draggable="true"ondragstart="drag(event)"></i>
+      </div>
+    </div>
+
+<script type="text/javascript">
+  var tab1=document.getElementById("tab1")
+  var tab2=document.getElementById("tab2")
+  var tab3=document.getElementById("tab3")
+  var tab4=document.getElementById("tab4")
+  function changetab1(){
+    tab2.hidden=true
+    tab1.hidden=false
+    tab3.hidden=true
+    tab4.hidden=true
+  }
+
+  function changetab2(){
+    tab2.hidden=false
+    tab1.hidden=true
+    tab3.hidden=true
+    tab4.hidden=true
+  }
+
+  function changetab3(){
+    tab3.hidden=false
+    tab2.hidden=true
+    tab1.hidden=true
+    tab4.hidden=true
+  }
+
+  function changetab4(){
+    tab3.hidden=true
+    tab2.hidden=true
+    tab1.hidden=true
+    tab4.hidden=false
+  }
+
+function drag(event){
+  event.dataTransfer.setData("text", event.target.id)
+}
+
+function drop(event){
+  event.preventDefault()
+  var id = event.dataTransfer.getData("text")
+  console.log(id)
+  event.target.appendChild(document.getElementById(id))
+
+}
+
+function allowdrop(event){
+  event.preventDefault()
+}
+
+</script>
+
+
+  </body>
+</html>

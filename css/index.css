@@ -648,6 +648,11 @@ padding:10px 12px;
 text-decoration:none;
 }
 
+.btn-picktemplate a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn-picktemplate:hover{
 background-color:#6c6c6c;
 }

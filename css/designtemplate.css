@@ -26,12 +26,22 @@ text-align: center;
 
 }
 
-
-
 .topnav{
   overflow: hidden;
 }
 
 .designbar{
   color: #5cb85c;
+}
+.designbtn{
+    margin-left: 27%;
+    background-color: #222222;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 8px 20px;
+    text-decoration: none;
 }
